@@ -34,13 +34,13 @@ namespace Homework
 
     class Classroom
     {
-        private string NewStudents;
-        public string NewStudent
+        private string NewStudents;//the private local variable should have name start from normal cheracter (not capital), e.g. newStudents
+        public string NewStudent//since the NewStudent property is public handle for the private field NewStudents - its name should correspond to the private field name, e.g it should be NewStudents
         {
             get { return NewStudents; }
             set { NewStudents = value; }
         }
-        public void Students()
+        public void Students()//the void name should be more meaningful. This void do printout the pupils - ok, let is be something like PrinStudents or GetStudents
         {
             string[] Pupils = new string[]
             {
@@ -105,9 +105,9 @@ namespace Homework
         }
 
         string Lesson = "Math";
-        string TeacherName = "Anthony Hobbs";
+        string TeacherName = "Anthony Hobbs";//private local field name should start from lowercase character, e.g. teacherName
 
-        public string NewTeacher
+        public string NewTeacher//the property name should correspond to the local field name, in your case it should be TeacherName
         {
             set { TeacherName = value; }
         }
@@ -117,3 +117,4 @@ namespace Homework
         }
     }
 }
+//checked
